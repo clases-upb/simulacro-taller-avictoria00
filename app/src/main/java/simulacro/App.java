@@ -14,20 +14,19 @@ public class App {
      * y devuelve en entero, los segundos equivalentes. Si hay un error, devuelve -1. 
      *  Adaptado de edabit
      */
-     public static boolean Validar_iguales (short nro1, short nro2){
-          try {
-              boolean son_iguales = false;
-              if(nro1==nro2);
-                 son_iguales = true;
-            else 
-                son_iguales = false;
-            return son_iguales
-          }
-            catch (Exception e){
-              return false;
+    public static int Convertir_min_sec (int minutos){
+       try {
+         int segundos = 0;
+         byte segx_min = 60;
+         tot_segundos = minutos * segx_min;
+         return tot_segundos;
+        }
+              catch (Exception e){
+             return -1;
             }
-           
-    }
+
+
+    } 
 
 
      /*
